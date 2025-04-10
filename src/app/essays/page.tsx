@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 
-export const generateMetadata = async (): Promise<Metadata> => {
-  return {
-    title: "Esai | Website Pribadi",
-    description: "Kumpulan esai yang ditulis oleh saya.",
-  };
+export const metadata: Metadata = {
+  title: 'Esai Saya',
+  description: 'Halaman terkait esai yang saya tulis.',
+  openGraph: {
+    images: "https://example.com/default-image.jpg",
+    url: "https://example.com",
+  },
 };
 
 export default function Essays() {

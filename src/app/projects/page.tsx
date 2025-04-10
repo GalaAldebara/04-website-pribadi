@@ -3,11 +3,13 @@ import Image, { StaticImageData } from 'next/image';
 import image1 from '../../../public/images/project1.png';
 import image2 from '../../../public/images/project2.png';
 
-export const generateMetadata = async (): Promise<Metadata> => {
-  return {
-    title: "Proyek | Website Pribadi",
-    description: "Berikut adalah daftar proyek yang pernah saya kerjakan.",
-  };
+export const metadata: Metadata = {
+  title: 'Project saya',
+  description: 'Data project yang saya sedang lakukan dan telah dilakukan.',
+  openGraph: {
+    images: "https://example.com/default-image.jpg",
+    url: "https://example.com",
+  },
 };
 
 type ProjectItemProps = {

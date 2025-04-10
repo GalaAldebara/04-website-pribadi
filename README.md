@@ -15,3 +15,7 @@
 ### Halaman Proyek
 
 ![Halaman Proyek](public/images/halamanproyek.png)
+
+# Tugas 5 SEO
+
+![Halaman Proyek](public/images/SEO.png)
